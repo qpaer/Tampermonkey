@@ -11,10 +11,12 @@
 (function() {
     'use strict';
 
+    let downloadCounter = 1; // Initialize download counter
+
     function downloadImage(imageUrl, event) {
         if (!event.ctrlKey) return; // Download only on Ctrl key press
 
-        let fileName = imageUrl.split('/').pop();
+        let fileName = `Image ${downloadCounter++}`; // Generate sequential filename
         let downloadPath = '/Users/[YOUR_USERNAME]/Downloads/'; // Change download path
 
         let xhr = new XMLHttpRequest();
