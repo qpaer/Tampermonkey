@@ -1,3 +1,7 @@
+# Description
+
+This Tampermonkey script enables downloading images on mouse hover.
+
 # Features
 
 1. Download images with a simple mouse hover.
